@@ -7,7 +7,7 @@ import { FaTasks } from "react-icons/fa";
 import { SiAndroidauto } from "react-icons/si";
 function App() {
   return (
-    <main className="w-full bg-[url('/Ai-automate-business/bg.webp')] bg-no-repeat bg-bottom-right bg-cover h-auto ">
+    <main className="w-full bg-[url('/bg.webp')] bg-no-repeat bg-bottom-right bg-cover h-auto ">
       <Navebar />
       <Herosection />
       <Features data={{
