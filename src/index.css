@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+html,
+body {
+ width: 100%;
+ background-position: 0 0;
+ background-repeat: repeat;
+ background-size: cover;
+ font-family: 'Inter', sans-serif;
+ background-blend-mode: multiply;
+}
