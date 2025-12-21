@@ -5,6 +5,8 @@ import { IoAnalyticsOutline } from 'react-icons/io5'
 import { SiAutocannon, SiGoogleanalytics, SiLoopback } from 'react-icons/si'
 import { FaTasks } from "react-icons/fa";
 import { SiAndroidauto } from "react-icons/si";
+import Footer from './compnent/Footer'
+import AboutUs from './compnent/Aboutus'
 function App() {
   return (
     <main className="w-full bg-[url('/bg.webp')] bg-no-repeat bg-bottom-right bg-cover h-auto ">
@@ -13,12 +15,12 @@ function App() {
       <Features data={{
         fetureText: "Features",
         icons: [
-        <SiAutocannon className="text-4xl text-[#ffffff] mx-auto" />,
-        <IoAnalyticsOutline className="text-4xl text-[#ffffff] mx-auto" />,
-        <SiGoogleanalytics className="text-4xl text-[#ffffff] mb-2 -mt-2 mx-auto" />,
-        <SiLoopback className="text-4xl text-[#ffffff] mx-auto" />,
+          <SiAutocannon className="text-4xl text-[#ffffff] mx-auto" />,
+          <IoAnalyticsOutline className="text-4xl text-[#ffffff] mx-auto" />,
+          <SiGoogleanalytics className="text-4xl text-[#ffffff] mb-2 -mt-2 mx-auto" />,
+          <SiLoopback className="text-4xl text-[#ffffff] mx-auto" />,
         ],
-        css3:"flex-row items-center justify-center",
+        css3: "flex-row items-center justify-center",
         feature1: {
           title: "Automated Workflows",
           css: "mt-4",
@@ -35,14 +37,14 @@ function App() {
       }} />
       <Features data={{
         fetureText: "Trusted by Industry Leaders",
-        lastcsss:"mb-4",
+        lastcsss: "mb-4",
         icons: [
           <SiAndroidauto className="text-4xl text-[#ffffff] mx-auto" />,
           <SiAutocannon className="text-4xl text-[#ffffff] mx-auto" />,
-        "",
-        <FaTasks className="text-4xl text-[#ffffff] mx-auto" />,
-      ],
-        css3:"flex items-center justify-center",
+          "",
+          <FaTasks className="text-4xl text-[#ffffff] mx-auto" />,
+        ],
+        css3: "flex items-center justify-center",
 
         feature1: {
           title: "Scan Or LogIn",
@@ -61,7 +63,10 @@ function App() {
           css2: "text-[#c1c1c1] font-thin text-[12px]",
           title: "Get Reports",
         }
-      }} />
+      }}
+      />
+      <AboutUs />
+      <Footer />
     </main>
   )
 }
