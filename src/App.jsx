@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './index.css'
-import { Navebar, Herosection, Features } from './allfile'
+import { Navebar, Herosection, Features, AboutUs, Footer, Contant } from './allfile'
 import { IoAnalyticsOutline } from 'react-icons/io5'
 import { SiAutocannon, SiGoogleanalytics, SiLoopback } from 'react-icons/si'
 import { FaTasks } from "react-icons/fa";
 import { SiAndroidauto } from "react-icons/si";
-import Footer from './compnent/Footer'
-import AboutUs from './compnent/Aboutus'
+import PricingPage from './compnent/Price'
+
 function App() {
   return (
     <main className="w-full bg-[url('/bg.webp')] bg-no-repeat bg-bottom-right bg-cover h-auto ">
@@ -66,6 +66,8 @@ function App() {
       }}
       />
       <AboutUs />
+      <Contant />
+      <PricingPage />
       <Footer />
     </main>
   )

@@ -1,9 +1,9 @@
 import Features from './Features';
-import { SiActivision,  SiTransmission,  SiWorkplace } from 'react-icons/si';
+import { SiActivision, SiTransmission, SiWorkplace } from 'react-icons/si';
 import { IoAnalyticsOutline } from 'react-icons/io5';
 import Textorline from './Linetext';
 import Card from './card';
-import {adarsh,dheeraj, deeapk} from './image';
+import { adarsh, dheeraj, deeapk } from './image';
 export default function AboutUs() {
     return (
         <>
@@ -44,34 +44,40 @@ export default function AboutUs() {
                         <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto mt-8 mb-8">
                             Founded with a vision to revolutionize business automation, our journey began with a simple belief: every business deserves the power of intelligent automation. We started as a small team of passionate developers and entrepreneurs, determined to make automation accessible to businesses of all sizes. Through years of dedication, innovation, and countless success stories, we've grown into a trusted partner for companies looking to streamline operations, boost productivity, and unlock new growth opportunities. Today, we continue to push the boundaries of what's possible in business automation, empowering our clients to focus on what truly matters while we handle the complexity.</p>
                     </div>
+                    <Textorline text={"our team"} />
 
-                    <div className="w-full  mx-auto flex flex-col px-7 mt-10 ">
-                         <Textorline text={"our team"} />
-                          <Card data={{
-                            membername: "Dheeraj Dwivedi",
-                            memberrole: "Ceo & Founder",
-                            memberimg: dheeraj
-                          }} />
-                    </div>
-                    <div className="w-full  mx-auto flex flex-col px-7 ">
-                        
-                          <Card data={{
-                            membername: "Adarsh",
-                            memberrole: "meneger",
-                            memberimg: adarsh
-                          }} />
-                    </div>
-                    <div className="w-full mb-10 mx-auto flex flex-col px-7 ">
-                       
-                          <Card data={{
-                            membername: "Deepak Dwivedi",
-                            memberrole: "2nd meneger",
-                            memberimg: deeapk
-                          }} />
+                    <div className='w-full flex flex-col md:flex-row' >
+
+                        <div className="w-full  mx-auto flex flex-col px-7 md:px-0  ">
+                            <Card data={{
+                                membername: "Dheeraj Dwivedi",
+                                memberrole: "Ceo & Founder",
+                                memberimg: dheeraj
+                            }} />
+                        </div>
+                        <div className="w-full  mx-auto flex flex-col px-7 md:px-0 ">
+
+                            <Card data={{
+                                membername: "Adarsh",
+                                memberrole: "meneger",
+                                memberimg: adarsh,
+                                css:"shadow-[0px_0px_10px_#c4ff01]"
+                            }} />
+                        </div>
+                        <div className="w-full mb-10 mx-auto flex flex-col px-7 md:px-0 ">
+
+                            <Card data={{
+                                membername: "Deepak Dwivedi",
+                                memberrole: "2nd meneger",
+                                memberimg: deeapk
+                            }} />
+                        </div>
                     </div>
                 </div>
 
             </section>
+
+
         </>
     );
 }
