@@ -5,7 +5,7 @@ export default function PricingPage() {
   const [billing, setBilling] = useState("yearly");
 
   return (
-    <div className="min-h-screen m-auto bg-[#1f2023] text-white">
+    <div className=" m-auto bg-[#1f2023] text-white">
 
       <div className="flex flex-col items-center py-16 px-4">
         <h2 className="text-4xl font-semibold mb-6">Pricing Plans</h2>

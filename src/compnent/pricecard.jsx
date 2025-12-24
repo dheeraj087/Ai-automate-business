@@ -43,7 +43,7 @@ function PricingCard({
 
       <button
         onClick={handleClick}
-        className="w-full bg-green-500 text-black py-2 rounded-lg font-semibold hover:bg-green-400"
+        className="w-full  cursor-pointer hover:scale-102 active:scale-98 active:bg-[#c1c1c1]  bg-green-500 text-black py-2 rounded-lg font-semibold hover:bg-green-400"
       >
         {isContact ? "Contact Sales" : "Get Started"}
       </button>

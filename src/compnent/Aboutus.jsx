@@ -4,11 +4,12 @@ import { IoAnalyticsOutline } from 'react-icons/io5';
 import Textorline from './Linetext';
 import Card from './card';
 import { adarsh, dheeraj, deeapk } from './image';
+
 export default function AboutUs() {
     return (
         <>
-            <section className=" relative about-us w-full m-auto border bg-[url('/logoaboutus.webp')] bg-no-repeat bg-top bg-cover  bg-[#292A2E] text-white py-5 border-[#092811] rounded-lg mt-10 ">
-                <div className="absolute w-full opacity-90 h-full top-0 left-0 bg-black rounded-lg z-1"></div>
+            <section className=" relative about-us w-full m-auto border bg-[url('/logoaboutus.webp')] bg-no-repeat bg-center bg-cover  bg-[#292A2E] text-white py-5 border-[#092811] rounded-lg mt-10 ">
+                <div className="absolute w-full opacity-60 h-full top-0 left-0 bg-black rounded-lg z-1"></div>
                 <div className=" relative z-10   w-full  mx-auto flex flex-col items-center justify-center text-center px-4">
                     <h1 className="text-5xl font-bold underline text-yellow-400 font-['inter','sans-serif'] mt-40 ">About Us</h1>
                 </div>

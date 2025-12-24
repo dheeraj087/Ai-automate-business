@@ -1,6 +1,4 @@
 @import "tailwindcss";
-
-
 html,
 body {
  width: 100%;
@@ -10,4 +8,27 @@ body {
  background-size: cover;
  font-family: 'Inter', sans-serif;
  background-blend-mode: multiply;
+}
+.slide{
+    animation: slide 0.2s ease-in  ;
+}
+.slide2{
+    animation: slide2 1.2s ease-out backwards  ;
+}
+
+@keyframes slide {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+@keyframes slide2 {
+    0%{
+        width: 220px;
+    }
+    100%{
+        width: 0px;
+    }
 }
