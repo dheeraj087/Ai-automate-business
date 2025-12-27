@@ -8,6 +8,7 @@ body {
  background-size: cover;
  font-family: 'Inter', sans-serif;
  background-blend-mode: multiply;
+
 }
 .slide{
     animation: slide 0.2s ease-in  ;

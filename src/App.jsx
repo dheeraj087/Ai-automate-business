@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './index.css'
 import { Navebar, Herosection, Features, AboutUs, Footer, Contant } from './allfile'
 import { IoAnalyticsOutline } from 'react-icons/io5'
