@@ -13,9 +13,9 @@ const Navebar = ({ hi }) => {
 
             if (currentScrollY > lastScrollY) {
 
-                ref.current.className = "w-full sticky -top-20 border-b z-50 transition-top duration-1000 border-[#5f5f5f]  h-16 backdrop-blur-4xl font-['inter','sans-serif'] flex items-center justify-between p-4 text-white "
+                ref.current.className = "w-full sticky -top-20 border-b z-50 transition-top duration-1000 border-[#5f5f5f] bg-[#0000007d] h-16 backdrop-blur-4xl font-['inter','sans-serif'] flex items-center justify-between p-4 text-white "
             } else {
-                ref.current.className = "w-full sticky top-0 border-b z-50 transition-top duration-1000 border-[#5f5f5f]  h-16 backdrop-blur-4xl font-['inter','sans-serif'] flex items-center justify-between p-4 text-white "
+                ref.current.className = "w-full sticky top-0 border-b z-50 transition-top duration-1000 border-[#5f5f5f] bg-[#0000007d] h-16 backdrop-blur-4xl font-['inter','sans-serif'] flex items-center justify-between p-4 text-white "
             }
 
             lastScrollY = currentScrollY;
@@ -30,7 +30,7 @@ const Navebar = ({ hi }) => {
         setmenu((!menu))
     }
     return (
-        <nav ref={ref} className={`w-full sticky top-0 border-b z-50 transition-top duration-1000 border-[#5f5f5f]  h-16 backdrop-blur-4xl font-['inter','sans-serif'] flex items-center justify-between p-4 text-white `}>
+        <nav ref={ref} className={`w-full sticky top-0 border-b z-20 transition-top duration-1000 border-[#5f5f5f]  h-16 bg-[#0000007d] font-['inter','sans-serif'] flex items-center justify-between p-4 text-white `}>
 
             <div className={`bg-background flex grow  text-2xl font-bold text-[#4ca75e] font-['Oswald',"sans-serif"]`}>MUELAX AI</div>
 

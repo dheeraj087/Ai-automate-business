@@ -46,13 +46,16 @@ const SingUp = ({ cut, cut2 }) => {
                         type={"password"}
                         placeholder={"conform password *"}
                     />
+                    <p className="text-[#c1c1c1] text-[12px] mb-2 w-[80%] text-left">* Must be at list 8 characters</p>
                     <Input
                         ref={(el) => (ref.current[6] = el)}
                         type={"number"}
                         placeholder={"Enter your phone number *"}
                     />
+                     <p className="text-[#c1c1c1] text-[12px] mb-2 mt-2 w-[80%] text-center font-normal">By signing up, you agree to our <span className="font-bold text-[13px]">Terms of Service</span> and  <span className="font-bold text-[13px]">Privacy Policy.</span></p>
                     <button type="submit" className="  cursor-pointer hover:scale-102 active:scale-98 active:bg-[#c1c1c1] hover:bg-[#ff0000] w-3/4 bg-[#6bcb62] text-white py-2 rounded-md mt-5"
                     >Sing Up</button>
+                     <p className="text-[#c1c1c1] text-[15px] mb-2 mt-2 w-[80%] text-center">Already have an account? <a href="#" className="text-[#ff1515] text-xl m-1">LOG IN</a></p>
                 </form>
 
             </div>
