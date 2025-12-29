@@ -6,6 +6,24 @@ import Card from './card';
 import { adarsh, dheeraj, deeapk } from './image';
 
 export default function AboutUs() {
+    let carddata = [
+        {
+            membername: "Dheeraj Dwivedi",
+            memberrole: "Ceo & Founder",
+            memberimg: dheeraj
+        },
+        {
+            membername: "Adarsh",
+            memberrole: "meneger",
+            memberimg: adarsh,
+            css: "shadow-[0px_0px_10px_#c4ff01]"
+        },
+        {
+            membername: "Deepak Dwivedi",
+            memberrole: "2nd meneger",
+            memberimg: deeapk
+        },
+    ]
     return (
         <>
             <section className=" relative about-us w-full m-auto border bg-[url('/logoaboutus.webp')] bg-no-repeat bg-center bg-cover  bg-[#292A2E] text-white py-5 border-[#092811] rounded-lg mt-10 ">
@@ -48,31 +66,22 @@ export default function AboutUs() {
                     <Textorline text={"our team"} />
 
                     <div className='w-full flex flex-col md:flex-row' >
-
-                        <div className="w-full  mx-auto flex flex-col px-7 md:px-0  ">
-                            <Card data={{
-                                membername: "Dheeraj Dwivedi",
-                                memberrole: "Ceo & Founder",
-                                memberimg: dheeraj
-                            }} />
-                        </div>
-                        <div className="w-full  mx-auto flex flex-col px-7 md:px-0 ">
-
-                            <Card data={{
-                                membername: "Adarsh",
-                                memberrole: "meneger",
-                                memberimg: adarsh,
-                                css:"shadow-[0px_0px_10px_#c4ff01]"
-                            }} />
-                        </div>
-                        <div className="w-full mb-10 mx-auto flex flex-col px-7 md:px-0 ">
-
-                            <Card data={{
-                                membername: "Deepak Dwivedi",
-                                memberrole: "2nd meneger",
-                                memberimg: deeapk
-                            }} />
-                        </div>
+                        {carddata.map((card, index) => {
+                            return ((index !== 2) ? <div key={index} className="w-full mx-auto flex flex-col px-7 md:px-0 ">
+                                <Card data={{
+                                    membername: card.membername,
+                                    memberrole: card.memberrole,
+                                    memberimg: card.memberimg,
+                                }} />
+                            </div> : (<div className="w-full mx-auto flex flex-col px-7 md:px-0 " key={index}>
+                                <Card data={{
+                                    membername: card.membername,
+                                    memberrole: card.memberrole,
+                                    memberimg: card.memberimg,
+                                    css: card.css
+                                }} />
+                            </div>))
+                        })}
                     </div>
                 </div>
 

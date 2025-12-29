@@ -2,6 +2,7 @@ import { react } from "react";
 import { HiBadgeCheck } from "react-icons/hi";
 import { leptop } from "./image";
 import SingupButton from "./authCompnent/Loginbutton";
+import Inputfile from "./inputfile";
 
 function Herosection() {
     return (
@@ -21,6 +22,7 @@ function Herosection() {
                 <p className="mt-4 ml-4 lg:text-2xl text-thin text-[#b0afaf]"> <HiBadgeCheck className="inline text-xl lg:text-2xl -ml-2 text-[#468950]" /> 14'Day  Free Trial. no Credit card required</p>
             </div>
 
+        <Inputfile />
             <img src={leptop} alt="leptop" className="mt-7   h-auto" />
         </div>
     );

@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Navlinklist from "./NavlinkList";
 
 function Footer() {
     return (
@@ -7,27 +8,15 @@ function Footer() {
                 <div className="md:mb-60 mb-25 w-1/12"><div className={`bg-background text-nowrap flex grow text-textPrimary text-[11px] md:text-2xl font-bold text-[#4ca75e] font-['Oswald',"sans-serif"]`}>MUELAX AI</div></div>
                 <div className=" mr-2 w-1/4 border-black">
                     <div>
-                        <li className="underline md:p-2 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">Home</a></li>
-                        <li className="underline md:p-2 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">about us </a></li>
-                        <li className="underline md:p-2 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">contact</a></li>
-                    </div>
-                    <div>
-                        <li className="underline md:p-2 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">price </a></li>
-                        <li className="underline md:p-2 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">blgo</a></li>
+                        <Navlinklist underline={true} />
                         <li className="underline ml-2 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1]  md:p-2"><a href="#"><FaFacebookF /></a></li></div>
                 </div>
                 <div className="">
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">Home</a></li>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">about us </a></li>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">price </a></li>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">blgo</a></li>
+                    <Navlinklist underline={true} />
                     <li className=" ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#"><FaYoutube /></a></li>
                 </div>
                 <div>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">Home</a></li>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">about us </a></li>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">price </a></li>
-                    <li className="underline ml-2 md:p-3 list-none  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#">blgo</a></li>
+                    <Navlinklist underline={true} />
                     <li className=" md:p-3 list-none ml-2  cursor-pointer hover:scale-102 active:scale-98 active:text-[#c1c1c1] "><a href="#"><FaInstagram /></a></li>
 
                 </div>
