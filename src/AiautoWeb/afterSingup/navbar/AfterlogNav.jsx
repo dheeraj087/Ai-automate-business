@@ -19,8 +19,8 @@ const AfterlogNav = () => {
 
   const isMobile = useQueryHook({ query: '(max-width: 700px)' })
   return (
-    <nav className={`w-full  top-0 border-b z-20 transition-top duration-1000 border-[#5f5f5f]  h-[10vh] bg-[#25282B] font-['inter','sans-serif'] flex items-center justify-between  text-white `}>
-      {changeprofile && <div className="absolute md:right-0 top-20"><Inputfile changee={changeprofile} setimgcome={setimgcome} setchange={setchangeprofile} /></div>}
+    <nav className={`w-full fixed top-0 border-b z-20 transition-top duration-1000 border-[#5f5f5f]  h-[10vh] bg-[#25282B] font-['inter','sans-serif'] flex items-center justify-between  text-white `}>
+      {changeprofile && <div className="absolute md:right-0 z-40 top-20"><Inputfile changee={changeprofile} setimgcome={setimgcome} setchange={setchangeprofile} /></div>}
       {isMobile ?
         <div className='w-full flex items-center justify-between m-3'>
           <div className={`bg-background grow select-none text-xl font-bold text-[#4ca75e] font-['Oswald',"sans-serif"]`}>MUELAX AI</div>

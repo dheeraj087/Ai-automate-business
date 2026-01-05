@@ -1,6 +1,6 @@
 import { use, useRef, useState } from "react"
 import { FcAddImage } from "react-icons/fc";
-function Inputfile({ clicked, setchange, setimgcome }) {
+function Inputfile({setchange, setimgcome }) {
     const displayFromref = useRef("")
     const [img, setimg] = useState(false);
     const [imgprev, setimgprev] = useState(false);

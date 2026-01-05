@@ -15,7 +15,7 @@ const Ownerinfo = () => {
     return (
         <div className="text-white flex text-nowrap font-sans ml-5 mt-3 w-[90%]">
             <div className="mt-4">
-                <h1 className="text-[#f0f0f0]"><span className="text-[#609C7A]">Owner </span> Dashbord</h1>
+                <h1 className="text-[#f0f0f0]"><span className="text-[#609C7A] text-2xl">Owner </span> Dashbord</h1>
                 <h2 className="capitalize text-[#c1c1c1]">welcom back ,{ownerData.name}</h2>
             </div>
             <h1 className="text-xs -ml-9 text-[#c1c1c1] ">{arr[0]}, {arr[1]} {arr[2]},{arr[3]}-{time.toLocaleTimeString("en")} </h1>

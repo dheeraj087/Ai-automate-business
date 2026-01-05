@@ -36,6 +36,7 @@ function heandale({ e, ref, setvalidity }) {
     ref.current.forEach((input) => {
         input.value = "";
     })
+    window.location.reload
 }
 
 export default heandale;
