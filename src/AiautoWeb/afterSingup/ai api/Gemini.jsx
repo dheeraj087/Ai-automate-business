@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const useGemini = ({ promt }) => {
     const [response, setResponse] = useState("");
+console.log(API_KEY);
 
     useEffect(() => {
         if (!promt) return
@@ -10,7 +12,7 @@ const useGemini = ({ promt }) => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer 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",
+                Authorization:`Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
             },
             body: JSON.stringify({
                 model: "openai/gpt-oss-120b",
