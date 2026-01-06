@@ -3,14 +3,14 @@ import AfterlogNav from '../navbar/AfterlogNav'
 import Ownerinfo from './Ownerinfo'
 import SideBar from '../navbar/SideBar'
 import Employ from '../employcomp/employ'
-import useGemini from '../ai api/Gemini'
-import Aipage from '../ai api/Aipage'
+// import useGemini from '../ai api/Gemini'
+// import Aipage from '../ai api/Aipage'
 import Bottomnav from '../navbar/Bottomnav'
 
 function CompneyOwnDashbord() {
 
-    const [promt, setpromt] = useState("");
-    const response = useGemini({ promt: promt })
+    // const [promt, setpromt] = useState("");
+    // const response = useGemini({ promt: promt })
     return (
 
         <>
@@ -18,7 +18,7 @@ function CompneyOwnDashbord() {
                 <SideBar />
 
                 <div className='w-[90%]'>
-                    <Aipage setPromt={setpromt} />
+                    {/* <Aipage setPromt={setpromt} /> */}
                     <Ownerinfo />
                     <Employ />
 
@@ -26,7 +26,7 @@ function CompneyOwnDashbord() {
 
                 
             </div>
-            <div className=" min-h-screen p-4 bg-black">
+            {/* <div className=" min-h-screen p-4 bg-black">
                     {response ? (
                         // Render AI JSX/HTML output
                         <div
@@ -38,7 +38,7 @@ function CompneyOwnDashbord() {
                             Loading AI response...
                         </p>
                     )}
-                </div>
+                </div> */}
         </>
     )
 }
