@@ -3,7 +3,6 @@ const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const useGemini = ({ promt }) => {
     const [response, setResponse] = useState("");
-console.log(API_KEY);
 
     useEffect(() => {
         if (!promt) return
@@ -12,7 +11,6 @@ console.log(API_KEY);
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization:`Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
             },
             body: JSON.stringify({
                 model: "openai/gpt-oss-120b",
