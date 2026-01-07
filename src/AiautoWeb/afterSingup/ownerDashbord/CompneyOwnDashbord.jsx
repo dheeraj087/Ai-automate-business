@@ -9,36 +9,16 @@ import Bottomnav from '../navbar/Bottomnav'
 
 function CompneyOwnDashbord() {
 
-    const [promt, setpromt] = useState("");
-    const response = useGemini({ promt: promt })
-    return (
 
+    return (
         <>
             <div className='w-full flex mt-14 text-white'>
-                <SideBar />
-
                 <div className='w-[90%]'>
-                    <Aipage setPromt={setpromt} />
                     <Ownerinfo />
                     <Employ />
-
                 </div>
-
-                
             </div>
-            <div className=" min-h-screen p-4 bg-black">
-                    {response ? (
-                        // Render AI JSX/HTML output
-                        <div
-                            className="bg-black text-black max-w-4xl mx-autorounded-lg p-6 shadow-md"
-                            dangerouslySetInnerHTML={{ __html: response }}
-                        ></div>
-                    ) : (
-                        <p className="text-center text-gray-500 mt-10">
-                            Loading AI response...
-                        </p>
-                    )}
-                </div>
+            <Aipage />
         </>
     )
 }

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const useGemini = ({ promt }) => {
     const [response, setResponse] = useState("");
-console.log(API_KEY);
 
     useEffect(() => {
         if (!promt) return
@@ -12,7 +10,7 @@ console.log(API_KEY);
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization:`Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
+                Authorization: `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
             },
             body: JSON.stringify({
                 model: "openai/gpt-oss-120b",
@@ -33,6 +31,7 @@ if user what need th answer an you can responsed according to the answer ok
 4. The output MUST include (if neen the explain):
    - Headings using <h1> and <h2>
    - Short, friendly paragraphs using <p>
+    points numbring and bulltes point in list or key points with bettre mirgen padding or spacing
     <table> with clear headers
 
 5. UI / UX requirements :
@@ -48,14 +47,11 @@ if user what need th answer an you can responsed according to the answer ok
    - Borders and padding required
 
 8. Tone:
-   - Friendly and helpful
-   - Short paragraphs
-   - Simple explanations
-   - No long walls of text
-
+   - Friendly and helpful with emojies and icons for a better fell the user  
+   - Simple explanations 
+   - frandly tone with better explation or lastly give the summery of the answer with points or key point and next expeted  question to asked user in future chats in bulldes or emojis or points
 9. Do NOT:
    - Do NOT explain the format
-   - Do NOT add extra text outside JSX
    - Do NOT break JSX/HTML syntax
 
 10. Always adapt the content to the user's question, but keep the SAME structure and UI style.
@@ -76,9 +72,9 @@ Now generate the response according to the user's question using this format use
             .then((data) => {
                 setResponse(data?.choices[0]?.message?.content || "");
             })
-            .catch((err) => setResponse(err));
-
+            .catch((err) => setResponse("network error plz check the network"));
     }, [promt]);
+    console.log("hgfh");
 
     return (
         response);
