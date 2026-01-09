@@ -29,7 +29,7 @@ function heandale({ e, ref, setvalidity }) {
     const formData = ref.current.reduce((acc, input) => {
         acc[input.name] = input.value;
         return acc;
-    }, {});
+    }, {}); 
 
     const finalData = {
         ...formData,

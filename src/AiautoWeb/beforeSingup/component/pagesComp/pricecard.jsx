@@ -1,3 +1,7 @@
+import {Routes, useNavigate} from 'react-router-dom'
+import SingUp from '../authCompnent/SingUp';
+import { useState } from 'react';
+
 function PricingCard({
   title,
   price,
@@ -6,18 +10,28 @@ function PricingCard({
   popular,
   isContact,
 }) {
+  const [login ,setlogin] =useState()
+
+  const isLogin = JSON.parse(localStorage.getItem("signupData"))?.signup || false
   const handleClick = () => {
-    if (isContact) {
-      window.open(
-        "https://wa.me/916393014836?text=Hi%20I%20want%20Enterprise%20plan",
-        "_blank"
-      );
-    } else {
-      alert(`${title} plan selected`);
+    if (isLogin) {
+      if (isContact) {
+        window.open(
+          "https://wa.me/916393014836?text=Hi%20I%20want%20Enterprise%20plan",
+          "_blank"
+        );
+      } else {
+        alert(`${title} plan selected`);
+      }
     }
+    else {
+     setlogin(true)
+    }
+    
   };
 
   return (
+    <>
     <div className="relative  overflow-hidden w-80 bg-[#242529] border border-green-500/40 rounded-2xl p-6 transition hover:scale-105 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)]">
       {popular && (
         <span className="absolute top-7 -right-10 rotate-45 bg-red-500 text-black text-xs px-10 py-1 font-semibold">
@@ -46,8 +60,11 @@ function PricingCard({
         className="w-full  cursor-pointer hover:scale-102 active:scale-98 active:bg-[#c1c1c1]  bg-green-500 text-black py-2 rounded-lg font-semibold hover:bg-green-400"
       >
         {isContact ? "Contact Sales" : "Get Started"}
+      
       </button>
     </div>
+        {login?<SingUp /> :""}
+        </>
   );
 }
 export default PricingCard;

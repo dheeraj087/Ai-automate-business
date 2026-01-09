@@ -15,16 +15,16 @@ function Aipage() {
         }
     }
     return (
-        <div className=" bg-black h-[105vh] w-full relative ">
-            <div className='w-full h-[90vh] my-10 overflow-auto  scroll-smooth webkit-scrool'>
+        <div className=" bg-black h-[90vh] w-full relative md:-left-5 ">
+            <div className='w-full h-[80vh] my-10 overflow-auto  scroll-smooth webkit-scrool'>
                 {response ? (
                     // Render AI JSX/HTML output
                     <div
-                        className=" w-full max-w-4xl p-6  "
+                        className=" w-full max-w-4xl flex items-center justify-center"
                         dangerouslySetInnerHTML={{ __html: response }}
                     />
                 ) : (
-                    <p className="text-center text-gray-500 ">
+                    <p className="text-center text-gray-500 mt-50">
                         Loading AI response...
                     </p>
                 )}

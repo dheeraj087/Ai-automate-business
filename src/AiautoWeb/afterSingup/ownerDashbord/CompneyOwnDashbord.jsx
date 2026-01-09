@@ -12,13 +12,13 @@ function CompneyOwnDashbord() {
 
     return (
         <>
-            <div className='w-full flex mt-14 text-white'>
+            <div className='w-full min-h-screen flex mt-14 text-white'>
                 <div className='w-[90%]'>
                     <Ownerinfo />
                     <Employ />
                 </div>
             </div>
-            <Aipage />
+           
         </>
     )
 }

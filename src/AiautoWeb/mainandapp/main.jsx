@@ -4,9 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import { AfterlogApp } from './allfile.js'
 import isSingup from "./fortend.env"
-
+import { BrowserRouter } from "react-router-dom"
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <BrowserRouter >
     {(isSingup || false) ? <AfterlogApp /> : <App />}
-  </StrictMode>
+  </BrowserRouter>
 )

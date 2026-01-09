@@ -11,6 +11,7 @@ const AfterlogNav = () => {
   if (localStorage.getItem("profileImage")) {
     dataProImg = JSON.parse(localStorage.getItem("profileImage"))
   }
+  
   const [changeprofile, setchangeprofile] = useState(false)
 
   function heandleclickimg() {
@@ -19,7 +20,7 @@ const AfterlogNav = () => {
 
   const isMobile = useQueryHook({ query: '(max-width: 700px)' })
   return (
-    <nav className={`w-full fixed top-0 left-0 border-b z-20 transition-top duration-1000 border-[#5f5f5f]  h-[10vh] bg-[#25282B] font-['inter','sans-serif'] flex items-center justify-between  text-white `}>
+    <nav className={`w-full fixed top-0 left-0 border-b z-20 transition-top duration-1000 border-[#5f5f5f]  md:h-[10vh] bg-[#25282B] font-['inter','sans-serif'] flex items-center justify-between  text-white `}>
       {changeprofile && <div className="absolute md:right-0 z-40 top-20"><Inputfile changee={changeprofile} setimgcome={setimgcome} setchange={setchangeprofile} /></div>}
       {isMobile ?
         <div className='w-full flex items-center justify-between m-3'>

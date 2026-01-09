@@ -37,7 +37,7 @@ function Inputfile({setchange, setimgcome }) {
                                 type="file"
                                 accept="image/*"
                                 placeholder="dheeraj"
-                                capture onChange={(e) => heandalechange(e)}
+                                onChange={(e) => heandalechange(e)}
                                 className="w-full h-full opacity-0 absolute bg-cover top-0 left-0 cursor-pointer z-50"
                             />
                         </>)}

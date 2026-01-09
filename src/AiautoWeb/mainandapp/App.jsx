@@ -1,5 +1,5 @@
 import './index.css'
-import { Navebar, Herosection, AboutUs, Footer, Contant, PricingPage, } from './allfile'
+import Routs from '../beforeSingup//router/routs'
 
 
 
@@ -8,12 +8,7 @@ function App() {
 
   return (
     <main className="w-full bg-[url('/bg.webp')] bg-no-repeat bg-bottom-right bg-cover h-auto ">
-      <Navebar />
-      <Herosection />
-      <AboutUs />
-      <Contant />
-      <PricingPage />
-      <Footer />
+    <Routs />
     </main>
 
   )
